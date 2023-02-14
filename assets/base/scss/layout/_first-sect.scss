@@ -2,6 +2,8 @@
 @use "../global";
 
 .first-sect {
+  margin-bottom: 6rem;
+
   &__inner {
     max-width: 1000px;
     padding: 1rem;
@@ -96,7 +98,8 @@
     justify-content: center;
     align-items: center;
     gap: 46px;
-    margin-bottom: 6rem;
+    margin: 0;
+    padding: 0;
   }
 
   &__company {
@@ -105,7 +108,7 @@
 
   &__lighting {
     width: 45vw;
-    height: 1013px;
+    height: 45vw;
     background: #002853;
     filter: blur(282px);
     position: absolute;

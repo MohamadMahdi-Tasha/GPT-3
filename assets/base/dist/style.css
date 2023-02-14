@@ -1,8 +1,13 @@
-body > section:not(:first-of-type, :nth-of-type(2)), body > footer {
+body > section:not(:first-of-type, :nth-of-type(2), :nth-of-type(3)), body > footer {
   display: none;
 }
 body:last-of-type {
   margin-bottom: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -84,6 +89,9 @@ body {
   background-color: transparent;
 }
 
+.first-sect {
+  margin-bottom: 6rem;
+}
 .first-sect__inner {
   max-width: 1000px;
   padding: 1rem;
@@ -166,14 +174,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 46px;
-  margin-bottom: 6rem;
+  margin: 0;
+  padding: 0;
 }
 .first-sect__company {
   height: 24px;
 }
 .first-sect__lighting {
   width: 45vw;
-  height: 1013px;
+  height: 45vw;
   background: #002853;
   filter: blur(282px);
   position: absolute;
@@ -202,6 +211,9 @@ body {
   color: #81AFDD;
 }
 
+.second-sect {
+  margin-bottom: 6rem;
+}
 .second-sect__inner {
   position: relative;
   max-width: 1000px;
@@ -218,6 +230,12 @@ body {
   display: flex;
   align-items: start;
   margin-bottom: 3rem;
+}
+.second-sect__top-title {
+  margin-top: 2rem;
+}
+.second-sect__bottom-title {
+  margin-bottom: 2rem;
 }
 .second-sect__top-title, .second-sect__bottom-title {
   font-weight: 800;
@@ -247,7 +265,7 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .second-sect__middle-title {
   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
@@ -275,6 +293,85 @@ body {
 }
 .second-sect__bottom > li:nth-of-type(2) {
   margin-inline: 20px;
+}
+
+.third-sect {
+  margin-bottom: 6rem;
+  padding: 2rem;
+  position: relative;
+}
+.third-sect__inner {
+  max-width: 1000px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.third-sect__title {
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 75px;
+  margin: 0 0 2rem 0;
+  line-height: normal;
+}
+.third-sect__link {
+  color: #F49867;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.third-sect__right-side-item {
+  display: flex;
+  align-items: start;
+}
+.third-sect__right-side-item:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+.third-sect__right-side-item:first-of-type {
+  margin-top: 2.5rem;
+}
+.third-sect__subtitles {
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  white-space: nowrap;
+  margin-right: 4rem;
+  margin-right: 8rem;
+  width: 100px;
+}
+.third-sect__subtitles:before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+  transform: translateY(-700%);
+}
+.third-sect__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #81AFDD;
+}
+.third-sect__light {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #07325F;
+  filter: blur(282px);
+  width: 45vw;
+  height: 45vw;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

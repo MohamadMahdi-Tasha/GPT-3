@@ -2,6 +2,8 @@
 @use "../global";
 
 .second-sect {
+  margin-bottom: 6rem;
+
   &__inner {
     position: relative;
     max-width: 1000px;
@@ -21,18 +23,17 @@
     margin-bottom: 3rem;
   }
 
+  &__top-title {
+    margin-top: 2rem;
+  }
+
+  &__bottom-title {
+    margin-bottom: 2rem;
+  }
+
   &__top-title,
   &__bottom-title{
-    font-weight: 800;
-    font-size: 24px;
-    color: white;
-    position: relative;
-    white-space: nowrap;
-    margin-right: 4rem;
-
-    &:before {
-      @include global.line-in-before-styles;
-    }
+    @include global.subtitle-styles(24px);
   }
 
   &__top-paragraph,
@@ -44,7 +45,7 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__middle-title {

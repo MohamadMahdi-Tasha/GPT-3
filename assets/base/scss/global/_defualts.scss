@@ -1,11 +1,12 @@
 // Codes By Mahdi Tasha
 // For Debugging
 body {
-  > section:not(:first-of-type, :nth-of-type(2)), > footer {display: none;}
+  > section:not(:first-of-type, :nth-of-type(2), :nth-of-type(3)), > footer {display: none;}
   &:last-of-type {margin-bottom: 100vh;}
 }
 
 // Default Styles
+h1,h2,h3,h4,h5,h6, p {padding: 0;margin: 0;}
 img {pointer-events: none;}
 button {cursor: pointer;transition: .3s;}
 a {text-decoration: none;}

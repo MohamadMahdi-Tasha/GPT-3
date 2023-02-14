@@ -1,0 +1,64 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.third-sect {
+  margin-bottom: 6rem;
+  padding: 2rem;
+  position: relative;
+
+  &__inner {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  &__title {
+    @include global.titles-styles(34px);
+
+    margin: 0 0 2rem 0;
+    line-height: normal;
+  }
+
+  &__link {
+    @include global.primary-link-styles;
+  }
+
+  &__right-side-item {
+    display: flex;
+    align-items: start;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4rem;
+    }
+
+    &:first-of-type {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__subtitles {
+    @include global.subtitle-styles(18px);
+
+    margin-right: 8rem;
+    width: 100px;
+  }
+
+  &__paragraph {
+    @include global.paragraph-styles(14px);
+  }
+
+  &__light {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #07325F;
+    filter: blur(282px);
+    width: 45vw;
+    height: 45vw;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
