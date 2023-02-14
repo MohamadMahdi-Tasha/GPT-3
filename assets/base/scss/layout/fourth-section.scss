@@ -1,0 +1,45 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.fourth-sect {
+  margin-bottom: 6rem;
+  padding: 2rem;
+
+  &__inner {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-img {
+    width: 50%;
+    margin-right: 3rem;
+  }
+
+  &__subtitle-1 {
+    color: global.$electric;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    @include global.titles-styles(34px);
+
+    line-height: 45px;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    @include global.paragraph-styles(16px);
+
+    line-height: 30px;
+    margin-bottom: .5rem;
+  }
+
+  &__subtitle-2 {
+    @include global.primary-link-styles;
+  }
+}
