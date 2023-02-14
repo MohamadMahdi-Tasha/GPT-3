@@ -1,4 +1,4 @@
-body:is(section, footer) {
+body > section:not(:first-of-type), body > footer {
   display: none;
 }
 body:last-of-type {
@@ -80,14 +80,114 @@ body {
 .header__sign-in-btn {
   background-color: #FF4820;
 }
-.header__sign-in-btn:hover {
-  background-color: #9b2c13;
-}
 .header__sign-up-btn {
   background-color: transparent;
 }
-.header__sign-up-btn:hover {
+
+.first-sect__inner {
+  max-width: 1000px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+.first-sect__top-side {
+  background-image: url("/assets/base/img/first-section/img-bg.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 8rem;
+}
+.first-sect__form {
+  display: flex;
+  margin-bottom: 2em;
+}
+.first-sect__input, .first-sect__input::placeholder {
+  color: #81AFDD;
+  font-weight: 400;
+  font-size: 15px;
+}
+.first-sect__input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #052D56;
+  border: none;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  caret-color: #FF4820;
+  outline: none;
+}
+.first-sect__person-holder {
+  display: flex;
+  align-items: center;
+}
+.first-sect__submit-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 15px;
   background-color: #FF4820;
+  color: white;
+  border: none;
+}
+.first-sect__person-holder {
+  display: flex;
+  align-items: start;
+}
+.first-sect__persons-real-holder {
+  display: flex;
+  align-items: center;
+}
+.first-sect__person:not(:first-of-type) {
+  margin-left: -1rem;
+}
+.first-sect div.first-sect__person {
+  margin-left: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-weight: 800;
+  font-size: 8px;
+  background-color: #71E5FF;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.first-sect__people-count-txt {
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  margin: 0 0 0 1rem;
+}
+.first-sect__companys-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+}
+.first-sect__company {
+  height: 24px;
+}
+.first-sect__title {
+  margin: 0 0 3rem 0;
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+}
+.first-sect__paragraph {
+  margin: 0 0 3rem 0;
+  width: 60%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #81AFDD;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -106,7 +206,6 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 hr {

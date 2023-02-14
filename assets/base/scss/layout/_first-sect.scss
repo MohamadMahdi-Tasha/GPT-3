@@ -1,0 +1,115 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.first-sect {
+  &__inner {
+    max-width: 1000px;
+    padding: 1rem;
+    margin-inline: auto;
+  }
+
+  &__top-side {
+    background-image: url('/assets/base/img/first-section/img-bg.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-bottom: 8rem;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 2em;
+  }
+
+  &__input, &__input::placeholder {
+    color: global.$cobalt;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &__input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: global.$prussian-blue;
+    border: none;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    caret-color: global.$orange;
+    outline: none;
+  }
+
+  &__person-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  &__submit-btn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: global.$orange;
+    color: white;
+    border: none;
+  }
+
+  &__person-holder {
+    display: flex;
+    align-items: start;
+  }
+
+  &__persons-real-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  &__person:not(:first-of-type) {
+    margin-left: -1rem;
+  }
+
+  div.first-sect__person {
+    margin-left: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-weight: 800;
+    font-size: 8px;
+    background-color: global.$electric;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &__people-count-txt {
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    margin: 0 0 0 1rem;
+  }
+
+  &__companys-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+  }
+
+  &__company {
+    height: 24px;
+  }
+
+  &__title {
+    margin: 0 0 3rem 0;
+    @include global.titles-styles;
+  }
+
+  &__paragraph {
+    margin: 0 0 3rem 0;
+    width: 60%;
+    @include global.paragraph-styles;
+  }
+}

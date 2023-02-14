@@ -1,0 +1,20 @@
+// Codes By Mahdi Tasha
+@use "colors";
+
+@mixin titles-styles {
+  background: linear-gradient(89.97deg, colors.$indigo 1.84%, colors.$tangerine 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+}
+
+@mixin paragraph-styles {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: colors.$cobalt;
+}

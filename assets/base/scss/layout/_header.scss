@@ -64,17 +64,9 @@
 
   &__sign-in-btn {
     background-color: global.$orange;
-
-    &:hover {
-      background-color: global.$darker-orange;
-    }
   }
 
   &__sign-up-btn {
     background-color: transparent;
-
-    &:hover {
-      background-color: global.$orange;
-    }
   }
 }
