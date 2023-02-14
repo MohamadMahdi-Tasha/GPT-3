@@ -170,6 +170,17 @@ body {
 .first-sect__company {
   height: 24px;
 }
+.first-sect__lighting {
+  width: 1013px;
+  height: 1013px;
+  background: #002853;
+  filter: blur(282px);
+  position: absolute;
+  left: -50%;
+  top: -100%;
+  pointer-events: none;
+  z-index: -1;
+}
 .first-sect__title {
   margin: 0 0 3rem 0;
   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);

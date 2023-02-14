@@ -102,6 +102,18 @@
     height: 24px;
   }
 
+  &__lighting {
+    width: 1013px;
+    height: 1013px;
+    background: #002853;
+    filter: blur(282px);
+    position: absolute;
+    left: -50%;
+    top: -100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
   &__title {
     margin: 0 0 3rem 0;
     @include global.titles-styles;
