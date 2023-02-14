@@ -171,13 +171,13 @@ body {
   height: 24px;
 }
 .first-sect__lighting {
-  width: 1013px;
+  width: 45vw;
   height: 1013px;
   background: #002853;
   filter: blur(282px);
   position: absolute;
-  left: -50%;
-  top: -100%;
+  left: 0;
+  top: -30%;
   pointer-events: none;
   z-index: -1;
 }
