@@ -1,3 +1,102 @@
+:root {
+  --orange: #FF4820;
+  --darker-orange: #9b2c13;
+  --indigo: #AE67FA;
+  --tangerine: #F49867;
+  --cobalt: #81AFDD;
+  --prussian-blue: #052D56;
+  --salmon: #FF8A71;
+  --electric: #71E5FF;
+}
+
+body > :is(section, footer) {
+  display: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #040C18;
+  font-family: Manrope, sans-serif;
+}
+
+.header__inner {
+  max-width: 1000px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__right {
+  display: flex;
+}
+.header__right > a {
+  display: block;
+}
+.header__right > a:first-of-type {
+  margin-right: 1rem;
+}
+.header__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header__logo-holder {
+  display: block;
+  margin-right: 2rem;
+}
+.header__list-item > a {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header__list-item:not(:last-of-type) {
+  margin-right: 2rem;
+}
+.header__sign-up-btn, .header__sign-in-btn {
+  padding-inline: 2rem;
+  padding-block: 0.75rem;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 0.25rem;
+}
+.header__sign-up-btn {
+  background-color: transparent;
+}
+.header__sign-up-btn:hover {
+  background-color: var(--orange);
+}
+.header__sign-in-btn {
+  background-color: var(--orange);
+}
+.header__sign-in-btn:hover {
+  background-color: var(--darker-orange);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -603,33 +702,6 @@ template {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-body > section {
-  display: none;
-}
-
-img {
-  pointer-events: none;
-}
-
-button {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background-color: #040C18;
-  font-family: Manrope, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

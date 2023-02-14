@@ -1,6 +1,6 @@
 // Codes By Mahdi Tasha
 // For Debugging
-body > section {display: none;}
+body > :is(section, footer) {display: none;}
 
 // Default Styles
 img {pointer-events: none;}

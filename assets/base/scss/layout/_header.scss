@@ -1,1 +1,77 @@
 // Codes By Mahdi Tasha
+.header {
+  &__inner {
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+
+    &>a {
+      display: block;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__logo-holder {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  &__list-item {
+    &> a {
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__sign-up-btn, &__sign-in-btn {
+    padding-inline: 2rem;
+    padding-block: .75rem;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: .25rem;
+  }
+
+  &__sign-up-btn {
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+
+  &__sign-in-btn {
+    background-color: var(--orange);
+
+    &:hover {
+      background-color: var(--darker-orange);
+    }
+  }
+}
