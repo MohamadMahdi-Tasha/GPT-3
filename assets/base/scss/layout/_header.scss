@@ -2,11 +2,8 @@
 @use "../global";
 
 .header {
-  background-color: global.$cobalt;
-
   &__inner {
     max-width: 1000px;
-    background-color: global.$orange;
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -14,13 +11,70 @@
     padding: 1rem;
   }
 
+  &__list {
+    display: flex;
+    align-items: center;
+
+    > .header__list-item {
+      > a {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 46px;
+      }
+    }
+  }
+
   &__left {
     display: flex;
+    align-items: center;
   }
 
   &__logo {
     display: block;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 18px;
+    color: white;
+  }
+
+  &__right {
+    display: flex;
+
+    > a {
+      display: block;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__sign-in-btn, &__sign-up-btn {
+    padding-inline: 1.5rem;
+    padding-block: .5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__sign-in-btn {
+    background-color: global.$orange;
+
+    &:hover {
+      background-color: global.$darker-orange;
+    }
+  }
+
+  &__sign-up-btn {
+    background-color: transparent;
+
+    &:hover {
+      background-color: global.$orange;
+    }
   }
 }
