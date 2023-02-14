@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A Resume Project With Name Of gpt-3 By Mahdi Tasha",
   "main": "index.html",
-  "scripts": {"test": "echo \"GPT-3 Project Works Fine\" && exit 1"},
+  "scripts": {
+    "test": "echo \"GPT-3 Project Works Fine\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MohamadMahdi-Tasha/GPT-3.git"
@@ -11,6 +13,11 @@
   "keywords": [],
   "author": "Mohamad Mahdi Tasha",
   "license": "ISC",
-  "bugs": {"url": "https://github.com/MohamadMahdi-Tasha/GPT-3/issues"},
-  "homepage": "https://github.com/MohamadMahdi-Tasha/GPT-3"
+  "bugs": {
+    "url": "https://github.com/MohamadMahdi-Tasha/GPT-3/issues"
+  },
+  "homepage": "https://github.com/MohamadMahdi-Tasha/GPT-3",
+  "devDependencies": {
+    "sass": "^1.58.1"
+  }
 }
