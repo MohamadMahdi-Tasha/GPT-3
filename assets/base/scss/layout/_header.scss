@@ -1,5 +1,26 @@
 // Codes By Mahdi Tasha
+@use "../global";
 
 .header {
-  background-color: red;
+  background-color: global.$cobalt;
+
+  &__inner {
+    max-width: 1000px;
+    background-color: global.$orange;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__logo {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+  }
 }

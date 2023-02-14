@@ -1,5 +1,22 @@
 .header {
-  background-color: red;
+  background-color: #81AFDD;
+}
+.header__inner {
+  max-width: 1000px;
+  background-color: #FF4820;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header__left {
+  display: flex;
+}
+.header__logo {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
