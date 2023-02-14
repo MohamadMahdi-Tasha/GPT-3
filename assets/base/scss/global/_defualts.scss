@@ -1,7 +1,7 @@
 // Codes By Mahdi Tasha
 // For Debugging
 body {
-  > section:not(:first-of-type), > footer {display: none;}
+  > section:not(:first-of-type, :nth-of-type(2)), > footer {display: none;}
   &:last-of-type {margin-bottom: 100vh;}
 }
 
