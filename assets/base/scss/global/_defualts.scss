@@ -1,0 +1,19 @@
+// Codes By Mahdi Tasha
+// For Debugging
+body {
+  &:is(section, footer) {display: none;}
+  &:last-of-type {margin-bottom: 100vh;}
+}
+
+// Default Styles
+img {pointer-events: none;}
+button {cursor: pointer;transition: .3s;}
+a {text-decoration: none;}
+ul {list-style: none;}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #040C18;
+  font-family: Manrope, sans-serif;
+}
