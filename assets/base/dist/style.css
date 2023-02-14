@@ -1,7 +1,8 @@
 body > section:not(:first-of-type,
 :nth-of-type(2),
 :nth-of-type(3),
-:nth-of-type(4)),
+:nth-of-type(4),
+:nth-of-type(5)),
 body > footer {
   display: none;
 }
@@ -424,6 +425,95 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+}
+
+.fifth-sect {
+  margin-bottom: 6rem;
+}
+.fifth-sect__top-side {
+  margin-bottom: 6rem;
+}
+.fifth-sect__top-side, .fifth-sect__inner {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.fifth-sect__top-side-link {
+  display: block;
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+.fifth-sect__top-side-link-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifth-sect__top-side-link-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  color: #0E0E0E;
+  margin-bottom: 1rem;
+}
+.fifth-sect__top-side-link-title {
+  font-weight: 800;
+  font-size: 20px;
+  color: #0E0E0E;
+}
+.fifth-sect__top-side-link-btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  font-weight: 700;
+  font-size: 13px;
+}
+.fifth-sect__title {
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  margin-bottom: 5rem;
+}
+.fifth-sect__grid-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+.fifth-sect__grid-holder > a {
+  display: block;
+  background-color: #052D56;
+}
+.fifth-sect__grid-holder > a:first-of-type {
+  grid-row: span 2;
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+}
+.card__content-holder {
+  padding: 2rem 1rem;
+}
+.card__date {
+  margin-bottom: 1rem;
+}
+.card__date, .card__link {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+.card__title {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 3rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
