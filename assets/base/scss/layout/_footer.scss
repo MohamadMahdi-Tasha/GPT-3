@@ -1,0 +1,84 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.footer {
+  background-color: #031B34;
+
+  &__inner {
+    width: 1000px;
+    margin-inline: auto;
+  }
+
+  &__top-side {
+    padding: 5rem;
+  }
+
+  &__top-title {
+    @include global.titles-styles(62px);
+
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__top-bottom-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__top-btn {
+    font-size: 18px;
+    color: white;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  &__main-side {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-block: 5rem;
+  }
+
+  &__location {
+    margin-top: 1rem;
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+  }
+
+  &__links-holder {
+    margin: 0;
+    padding: 0;
+
+    li:not(:last-of-type){
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__links-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__link {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &__bottom-holder {
+    padding: 2rem;
+    font-weight: 500;
+  }
+
+  &__bottom-txt {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+}

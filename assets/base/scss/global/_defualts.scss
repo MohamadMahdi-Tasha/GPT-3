@@ -1,13 +1,6 @@
 // Codes By Mahdi Tasha
 // For Debugging
-body {
-  > section:not(:first-of-type,
-   :nth-of-type(2),
-    :nth-of-type(3),
-    :nth-of-type(4),
-    :nth-of-type(5)), > footer {display: none;}
-  &:last-of-type {margin-bottom: 100vh;}
-}
+body:last-of-type {margin-bottom: 100vh;}
 
 // Default Styles
 h1,h2,h3,h4,h5,h6, p {padding: 0;margin: 0;}
