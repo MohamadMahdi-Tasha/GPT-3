@@ -1,0 +1,9 @@
+// Codes By Mahdi Tasha
+
+@mixin styles{
+  @media (max-width: 991px) {
+    .first-sect__top-side {
+      background-image: none;
+    }
+  }
+}

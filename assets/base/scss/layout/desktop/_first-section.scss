@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/first-section" as firstSectionsTabletStyles;
 
 .first-sect {
   margin-bottom: 6rem;
@@ -130,3 +131,5 @@
     @include global.paragraph-styles(20px);
   }
 }
+
+@include firstSectionsTabletStyles.styles;

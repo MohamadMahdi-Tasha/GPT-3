@@ -210,6 +210,11 @@ body {
   color: #81AFDD;
 }
 
+@media (max-width: 991px) {
+  .first-sect__top-side {
+    background-image: none;
+  }
+}
 .second-sect {
   margin-bottom: 6rem;
 }
