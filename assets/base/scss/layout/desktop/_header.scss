@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/header" as tabletHeaderStyles;
 
 .header {
   &__inner {
@@ -71,10 +72,4 @@
   }
 }
 
-@media (max-width: 991px) {
-  .header {
-    &__list {
-      display: none;
-    }
-  }
-}
+@include tabletHeaderStyles.styles
