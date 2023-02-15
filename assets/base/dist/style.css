@@ -329,6 +329,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .second-sect__inner {
+    padding: 1rem;
+  }
   .second-sect__top, .second-sect__middle {
     display: block;
   }
@@ -426,6 +429,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .third-sect {
+    padding: 1rem;
+  }
   .third-sect__inner {
     display: block;
   }
@@ -492,6 +498,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .fourth-sect {
+    padding: 1rem;
+  }
   .fourth-sect__inner {
     flex-direction: column;
     justify-content: center;

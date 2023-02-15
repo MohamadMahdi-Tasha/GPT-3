@@ -3,6 +3,8 @@
 @mixin styles {
   @media (max-width: 991px) {
     .fourth-sect {
+      padding: 1rem;
+
       &__inner {
         flex-direction: column;
         justify-content: center;

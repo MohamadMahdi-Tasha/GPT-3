@@ -76,6 +76,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .fourth-sect {
+    padding: 1rem;
+  }
   .fourth-sect__inner {
     flex-direction: column;
     justify-content: center;

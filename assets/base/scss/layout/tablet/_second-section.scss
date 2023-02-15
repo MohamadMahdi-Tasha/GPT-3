@@ -3,6 +3,10 @@
 @mixin styles {
   @media (max-width: 991px) {
     .second-sect {
+      &__inner {
+        padding: 1rem;
+      }
+
       &__top,&__middle {
         display: block;
       }

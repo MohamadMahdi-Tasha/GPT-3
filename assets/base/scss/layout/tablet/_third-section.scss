@@ -3,6 +3,8 @@
 @mixin styles{
   @media (max-width: 991px) {
     .third-sect {
+      padding: 1rem;
+
       &__inner {
         display: block;
 
