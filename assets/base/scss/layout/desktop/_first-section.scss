@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 @use "../../global";
 @use "../tablet/first-section" as firstSectionsTabletStyles;
+@use "../mobile/first-section" as firstSectionsMobileStyles;
 
 .first-sect {
   margin-bottom: 6rem;
@@ -133,3 +134,4 @@
 }
 
 @include firstSectionsTabletStyles.styles;
+@include firstSectionsMobileStyles.styles;

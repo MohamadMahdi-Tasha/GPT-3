@@ -1,0 +1,40 @@
+// Codes By Mahdi Tasha
+
+@mixin styles {
+  @media (max-width: 576px) {
+    .first-sect {
+
+      &__title {
+        font-size: 40px;
+        line-height: normal;
+      }
+
+      &__paragraph {width: auto;}
+
+      &__input {
+        display: block;
+        width: calc(100% - 4.1rem);
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      &__submit-btn {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      &__form {
+        display: block;
+      }
+      
+      &__person-holder {
+        display: block;
+      }
+
+      &__people-count-txt {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

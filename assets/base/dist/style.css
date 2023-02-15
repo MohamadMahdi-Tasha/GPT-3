@@ -215,6 +215,35 @@ body {
     background-image: none;
   }
 }
+@media (max-width: 576px) {
+  .first-sect__title {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .first-sect__paragraph {
+    width: auto;
+  }
+  .first-sect__input {
+    display: block;
+    width: calc(100% - 4.1rem);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .first-sect__submit-btn {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .first-sect__form {
+    display: block;
+  }
+  .first-sect__person-holder {
+    display: block;
+  }
+  .first-sect__people-count-txt {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
 .second-sect {
   margin-bottom: 6rem;
 }
