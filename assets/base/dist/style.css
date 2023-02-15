@@ -82,6 +82,11 @@ body {
   background-color: transparent;
 }
 
+@media (max-width: 991px) {
+  .header__list {
+    display: none;
+  }
+}
 .first-sect {
   margin-bottom: 6rem;
 }

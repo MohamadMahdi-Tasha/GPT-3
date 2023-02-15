@@ -70,3 +70,11 @@
     background-color: transparent;
   }
 }
+
+@media (max-width: 991px) {
+  .header {
+    &__list {
+      display: none;
+    }
+  }
+}
