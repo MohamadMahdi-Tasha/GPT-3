@@ -492,6 +492,7 @@ body {
   border-radius: 50rem;
   font-weight: 700;
   font-size: 13px;
+  border: none;
 }
 .fifth-sect__title {
   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
