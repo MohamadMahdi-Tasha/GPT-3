@@ -1,0 +1,9 @@
+// Codes By Mahdi Tasha
+
+@mixin styles{
+  @media (max-width: 576px) {
+    .footer__top-title {
+      font-size: 40px;
+    }
+  }
+}

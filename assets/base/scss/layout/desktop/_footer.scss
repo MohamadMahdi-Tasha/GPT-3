@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 @use "../../global";
 @use "../tablet/footer" as footerTabletStyles;
+@use "../mobile/footer" as footerMobileStyles;
 
 .footer {
   background-color: #031B34;
@@ -85,3 +86,4 @@
 }
 
 @include footerTabletStyles.styles;
+@include footerMobileStyles.styles;
