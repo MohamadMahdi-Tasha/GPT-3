@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 @use "../../global";
 @use "../tablet/third-section" as thirdSectionTabletStyles;
+@use "../mobile/third-section" as thirdSectionMobileStyles;
 
 .third-sect {
   margin-bottom: 6rem;
@@ -65,3 +66,4 @@
 }
 
 @include thirdSectionTabletStyles.styles;
+@include thirdSectionMobileStyles.styles;

@@ -433,6 +433,16 @@ body {
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 576px) {
+  .third-sect__right-side-item {
+    display: block;
+  }
+  .third-sect__subtitles {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
 .fourth-sect {
   margin-bottom: 6rem;
   padding: 2rem;
