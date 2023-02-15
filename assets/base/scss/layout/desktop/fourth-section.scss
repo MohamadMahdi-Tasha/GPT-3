@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/fourth-section" as forthSectionTabletStyles;
 
 .fourth-sect {
   margin-bottom: 6rem;
@@ -43,3 +44,5 @@
     @include global.primary-link-styles;
   }
 }
+
+@include forthSectionTabletStyles.styles;

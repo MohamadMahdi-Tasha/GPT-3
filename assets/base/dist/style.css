@@ -452,6 +452,15 @@ body {
   line-height: 30px;
 }
 
+@media (max-width: 991px) {
+  .fourth-sect__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fourth-sect__left-img {
+    margin-bottom: 2rem;
+  }
+}
 .fifth-sect {
   margin-bottom: 6rem;
 }
