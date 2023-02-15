@@ -1,0 +1,15 @@
+// Codes By Mahdi Tasha
+
+@mixin styles{
+  @media (max-width: 991px) {
+    .third-sect {
+      &__inner {
+        display: block;
+
+        &>div:first-of-type {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

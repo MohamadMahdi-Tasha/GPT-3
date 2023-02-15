@@ -396,6 +396,14 @@ body {
   pointer-events: none;
 }
 
+@media (max-width: 991px) {
+  .third-sect__inner {
+    display: block;
+  }
+  .third-sect__inner > div:first-of-type {
+    margin-bottom: 2rem;
+  }
+}
 .fourth-sect {
   margin-bottom: 6rem;
   padding: 2rem;

@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/third-section" as thirdSectionTabletStyles;
 
 .third-sect {
   margin-bottom: 6rem;
@@ -62,3 +63,5 @@
     pointer-events: none;
   }
 }
+
+@include thirdSectionTabletStyles.styles;
