@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/footer" as footerTabletStyles;
 
 .footer {
   background-color: #031B34;
@@ -82,3 +83,5 @@
     color: white;
   }
 }
+
+@include footerTabletStyles.styles;

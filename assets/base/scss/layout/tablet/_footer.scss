@@ -1,0 +1,34 @@
+// Codes By Mahdi Tasha
+
+@mixin styles{
+  @media (max-width: 991px) {
+    .footer {
+      &__top-side, &__main-side{padding: 1rem;}
+
+      &__top-title {
+        text-align: start;
+        font-size: 50px;
+        inline-size: 15ch;
+        overflow-wrap: break-word;
+      }
+
+      &__top-bottom-holder {
+        justify-content: start;
+      }
+
+      &__main-side {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+      }
+
+      &__bottom-holder {
+        padding: 1rem;
+        display: flex;
+      }
+
+      &__bottom-txt {
+        text-align: start;
+      }
+    }
+  }
+}
