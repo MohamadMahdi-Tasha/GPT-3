@@ -552,6 +552,31 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 991px) {
+  .fifth-sect {
+    padding: 1rem;
+  }
+  .fifth-sect__top-side-link-inner {
+    display: block;
+  }
+  .fifth-sect__top-side-link-btn {
+    margin-top: 2rem;
+  }
+  .fifth-sect__grid-holder {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .fifth-sect__grid-holder > a:first-of-type {
+    grid-row: auto;
+  }
+  .fifth-sect__grid-holder > a:last-of-type {
+    grid-column: span 2;
+  }
+  .fifth-sect .card__img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
 .footer {
   background-color: #031B34;
 }

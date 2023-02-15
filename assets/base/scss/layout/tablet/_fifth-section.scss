@@ -1,0 +1,26 @@
+// Codes By Mahdi Tasha
+
+@mixin styles {
+  @media (max-width: 991px) {
+    .fifth-sect {
+      padding: 1rem;
+
+      &__top-side-link-inner {display: block;}
+      &__top-side-link-btn {margin-top: 2rem;}
+      &__grid-holder {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        > a:first-of-type {grid-row: auto;}
+        > a:last-of-type {
+          grid-column: span 2;
+        }
+      }
+
+      .card__img {
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+}

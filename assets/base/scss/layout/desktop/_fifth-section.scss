@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/fifth-section" as fifthSectionTabletStyles;
 
 .fifth-sect {
   margin-bottom: 6rem;
@@ -102,3 +103,5 @@
     margin-bottom: 3rem;
   }
 }
+
+@include fifthSectionTabletStyles.styles;
