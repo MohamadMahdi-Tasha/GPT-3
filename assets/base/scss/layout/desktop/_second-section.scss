@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../../global";
+@use "../tablet/second-section" as secondSectionTabletStyles;
 
 .second-sect {
   margin-bottom: 6rem;
@@ -69,3 +70,5 @@
     }
   }
 }
+
+@include secondSectionTabletStyles.styles;
